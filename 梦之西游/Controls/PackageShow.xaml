@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="梦之西游.Controls.PackageShow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Height="451" Width="312" MouseLeftButtonDown="UserControl_MouseLeftButtonDown" MouseRightButtonDown="UserControl_MouseRightButtonDown" MouseMove="UserControl_MouseMove">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/道具0000.png" />
+    </UserControl.Background>
+    <Canvas>
+        <Canvas  Width="312" Height="173" Canvas.Top="22">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/装备兰0000.png" />
+            </Canvas.Background>
+        </Canvas>
+    </Canvas>
+</UserControl>

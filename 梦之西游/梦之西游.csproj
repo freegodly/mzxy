@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{296DE594-4EEA-499E-AF52-7C602D89BB20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>梦之西游</RootNamespace>
+    <AssemblyName>梦之西游</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20621.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Controls\BattleButtonsShow.xaml.cs">
+      <DependentUpon>BattleButtonsShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameMenuShow.xaml.cs">
+      <DependentUpon>GameMenuShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HeroPropertyShow.xaml.cs">
+      <DependentUpon>HeroPropertyShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IMagic.cs" />
+    <Compile Include="Controls\MapHeadShow.xaml.cs">
+      <DependentUpon>MapHeadShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MessageShow.xaml.cs">
+      <DependentUpon>MessageShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MonsterPropertyShow.xaml.cs">
+      <DependentUpon>MonsterPropertyShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PackageShow.xaml.cs">
+      <DependentUpon>PackageShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MagicShow.xaml.cs">
+      <DependentUpon>MagicShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextShow.xaml.cs">
+      <DependentUpon>TextShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SystemSettingShow.xaml.cs">
+      <DependentUpon>SystemSettingShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameMainWindow.xaml.cs">
+      <DependentUpon>GameMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageHome.xaml.cs">
+      <DependentUpon>PageHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SpiritInfo\SpiritObject.cs" />
+    <Page Include="Controls\BattleButtonsShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\GameMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\GameMenuShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\HeroPropertyShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\HeroStateShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MapHeadShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MessageShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MonsterPropertyShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PackageShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MagicShow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TextShow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Spirit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SystemSettingShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Teleport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameMainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\GameObject.cs" />
+    <Compile Include="Controls\GameMap.xaml.cs">
+      <DependentUpon>GameMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HeroStateShow.xaml.cs">
+      <DependentUpon>HeroStateShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Spirit.xaml.cs">
+      <DependentUpon>Spirit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Teleport.xaml.cs">
+      <DependentUpon>Teleport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\AStar.cs" />
+    <Compile Include="Logic\ReadMap\GetMapResource.cs" />
+    <Compile Include="Logic\ReadMap\GetShowMapImage.cs" />
+    <Compile Include="Logic\ReadMap\PGC.cs" />
+    <Compile Include="Logic\ReadMap\ReadMapFileClass.cs" />
+    <Compile Include="Logic\Static\GG.cs" />
+    <Compile Include="Logic\Static\Super.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="PageHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Graphics\Windowskins\battle_button.psd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\001-Blue01.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\001-Blue01副本.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\002-xycs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\006-Blue06 拷贝222.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\11052811515ac97069e95a9aa1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\11052811519d4acb4ef5b58336.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\battle_button.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\battle_button0.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\battle_button1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\battle_button2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\battle_button3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\battle_button4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\battle_button5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\battle_button6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\dis1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\dis2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\dis3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\Equip.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\Equip_Item.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\exp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\fightArrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\goods.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\goods1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\hp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\hp_back.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\JN.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\maphead.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\maphead1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\maphead2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\menu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\menu.png.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\message.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\message1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\np.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\panda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\skin_baby.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\sp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\system 1 .png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\system.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\system.png.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\system1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\system1.png.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\system11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\system111.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\task.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\task1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\win.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\win_xy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方交易.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方任务.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方动作.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方好友.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方帮派.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方快捷.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方攻击.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方物品.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方生肖.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方系统.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方组队.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\下方给予.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\帮助.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\窗口皮肤.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\窗口皮肤1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\窗口皮肤520.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Graphics\Windowskins\窗口皮肤_副本.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\nonhead.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\人物状态0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\召唤兽属性0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\装备兰0000.png" />
+    <Resource Include="Graphics\Windowskins\道具0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\系统设置0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\1.png" />
+    <Resource Include="Graphics\Windowskins\2.png" />
+    <Resource Include="Graphics\Windowskins\3.png" />
+    <Resource Include="Graphics\Windowskins\4.png" />
+    <Resource Include="Graphics\Windowskins\5.png" />
+    <Resource Include="Graphics\Windowskins\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\title1_副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\没有宠物0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\加血.png" />
+    <Resource Include="Graphics\Windowskins\加魔.png" />
+    <Resource Include="Graphics\Windowskins\升级.png" />
+    <Resource Include="Graphics\Windowskins\按钮X.png" />
+    <Resource Include="Graphics\Windowskins\按钮上.png" />
+    <Resource Include="Graphics\Windowskins\按钮下.png" />
+    <Resource Include="Graphics\Windowskins\按钮减.png" />
+    <Resource Include="Graphics\Windowskins\按钮加.png" />
+    <Resource Include="Graphics\Windowskins\按钮空.png" />
+    <Resource Include="Graphics\Windowskins\按钮行囊.png" />
+    <Resource Include="Graphics\Windowskins\按钮道具.png" />
+    <Resource Include="Graphics\Windowskins\捕捉.png" />
+    <Resource Include="Graphics\Windowskins\组队令牌.png" />
+    <Resource Include="Graphics\Windowskins\鼠标点地.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\按钮 减0003.png" />
+    <Resource Include="Graphics\Windowskins\按钮 加0003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\按钮 空白0000.png" />
+    <Resource Include="Graphics\Windowskins\按钮 空白0001.png" />
+    <Resource Include="Graphics\Windowskins\按钮 空白0002.png" />
+    <Resource Include="Graphics\Windowskins\按钮 空白0003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\按钮 X0000.png" />
+    <Resource Include="Graphics\Windowskins\按钮 X0001.png" />
+    <Resource Include="Graphics\Windowskins\按钮 X0002.png" />
+    <Resource Include="Graphics\Windowskins\按钮 X0003.png" />
+    <Resource Include="Graphics\Windowskins\按钮 减0000.png" />
+    <Resource Include="Graphics\Windowskins\按钮 减0001.png" />
+    <Resource Include="Graphics\Windowskins\按钮 减0002.png" />
+    <Resource Include="Graphics\Windowskins\按钮 加0000.png" />
+    <Resource Include="Graphics\Windowskins\按钮 加0001.png" />
+    <Resource Include="Graphics\Windowskins\按钮 加0002.png" />
+    <Resource Include="Graphics\Windowskins\按钮 右0000.png" />
+    <Resource Include="Graphics\Windowskins\按钮 右0001.png" />
+    <Resource Include="Graphics\Windowskins\按钮 右0002.png" />
+    <Resource Include="Graphics\Windowskins\按钮 右0003.png" />
+    <Resource Include="Graphics\Windowskins\按钮 左0000.png" />
+    <Resource Include="Graphics\Windowskins\按钮 左0001.png" />
+    <Resource Include="Graphics\Windowskins\按钮 左0002.png" />
+    <Resource Include="Graphics\Windowskins\按钮 左0003.png" />
+    <Resource Include="Graphics\Windowskins\按钮 箭头0000.png" />
+    <Resource Include="Graphics\Windowskins\按钮 箭头0001.png" />
+    <Resource Include="Graphics\Windowskins\按钮 箭头0002.png" />
+    <Resource Include="Graphics\Windowskins\按钮上0000.png" />
+    <Resource Include="Graphics\Windowskins\按钮上0001.png" />
+    <Resource Include="Graphics\Windowskins\按钮上0002.png" />
+    <Resource Include="Graphics\Windowskins\按钮上0003.png" />
+    <Resource Include="Graphics\Windowskins\按钮下0000.png" />
+    <Resource Include="Graphics\Windowskins\按钮下0001.png" />
+    <Resource Include="Graphics\Windowskins\按钮下0002.png" />
+    <Resource Include="Graphics\Windowskins\按钮下0003.png" />
+    <Resource Include="Graphics\Windowskins\按钮行囊0000.png" />
+    <Resource Include="Graphics\Windowskins\按钮行囊0001.png" />
+    <Resource Include="Graphics\Windowskins\按钮行囊0002.png" />
+    <Resource Include="Graphics\Windowskins\按钮道具0000.png" />
+    <Resource Include="Graphics\Windowskins\按钮道具0001.png" />
+    <Resource Include="Graphics\Windowskins\按钮道具0002.png" />
+    <Resource Include="Graphics\Windowskins\按钮道具0003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\战斗覆盖.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\战斗血条.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\召唤.png" />
+    <Resource Include="Graphics\Windowskins\攻击.png" />
+    <Resource Include="Graphics\Windowskins\法术.png" />
+    <Resource Include="Graphics\Windowskins\逃跑.png" />
+    <Resource Include="Graphics\Windowskins\道具.png" />
+    <Resource Include="Graphics\Windowskins\防御.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\召唤2.png" />
+    <Resource Include="Graphics\Windowskins\捕捉2.png" />
+    <Resource Include="Graphics\Windowskins\攻击2.png" />
+    <Resource Include="Graphics\Windowskins\法术2.png" />
+    <Resource Include="Graphics\Windowskins\逃跑2.png" />
+    <Resource Include="Graphics\Windowskins\道具2.png" />
+    <Resource Include="Graphics\Windowskins\防御2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\damage.png" />
+    <Resource Include="Graphics\Windowskins\damage1.png" />
+    <Resource Include="Graphics\Windowskins\HITS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Windowskins\Number.png" />
+    <Resource Include="Graphics\Windowskins\Number2.png" />
+    <Resource Include="Graphics\Windowskins\Number3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ResourseLibrary\ResourceLibrary.csproj">
+      <Project>{DA0F00AA-D56A-4A45-BAF3-32A021841ADE}</Project>
+      <Name>ResourceLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

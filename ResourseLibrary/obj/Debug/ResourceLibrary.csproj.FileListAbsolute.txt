@@ -1,0 +1,15 @@
+D:\SourceCode\C#\梦之西游\ResourseLibrary\bin\Debug\ResourseLibrary.dll
+D:\SourceCode\C#\梦之西游\ResourseLibrary\bin\Debug\ResourseLibrary.pdb
+D:\SourceCode\C#\梦之西游\ResourseLibrary\obj\Debug\ResourceLibrary.csprojResolveAssemblyReference.cache
+D:\SourceCode\C#\梦之西游\ResourseLibrary\obj\Debug\ResourseLibrary.MyResource.resources
+D:\SourceCode\C#\梦之西游\ResourseLibrary\obj\Debug\ResourceLibrary.csproj.GenerateResource.Cache
+D:\SourceCode\C#\梦之西游\ResourseLibrary\obj\Debug\ResourseLibrary.dll
+D:\SourceCode\C#\梦之西游\ResourseLibrary\obj\Debug\ResourseLibrary.pdb
+F:\Code\C#\梦之西游\ResourseLibrary\bin\Debug\ResourseLibrary.dll
+F:\Code\C#\梦之西游\ResourseLibrary\bin\Debug\ResourseLibrary.pdb
+F:\Code\C#\梦之西游\ResourseLibrary\obj\Debug\ResolveAssemblyReference.cache
+F:\Code\C#\梦之西游\ResourseLibrary\obj\Debug\ResourseLibrary.MyResource.resources
+F:\Code\C#\梦之西游\ResourseLibrary\obj\Debug\GenerateResource.read.1.tlog
+F:\Code\C#\梦之西游\ResourseLibrary\obj\Debug\GenerateResource.write.1.tlog
+F:\Code\C#\梦之西游\ResourseLibrary\obj\Debug\ResourseLibrary.dll
+F:\Code\C#\梦之西游\ResourseLibrary\obj\Debug\ResourseLibrary.pdb

@@ -1,0 +1,171 @@
+﻿<UserControl x:Class="梦之西游.Controls.HeroPropertyShow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Height="451" Width="257" MouseLeftButtonDown="UserControl_MouseLeftButtonDown" MouseRightButtonDown="UserControl_MouseRightButtonDown" MouseMove="UserControl_MouseMove">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/人物状态0000.png" Stretch="None" TileMode="None" />
+    </UserControl.Background>
+    <UserControl.Resources>
+        <ControlTemplate x:Key="MyButton" TargetType="Button">
+            <StackPanel Background="{TemplateBinding Button.Background}">
+            </StackPanel>
+        </ControlTemplate>
+        <Style x:Key="b1"  TargetType="Button">
+            <Setter  Property="Background">
+                <Setter.Value>
+                    <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20空白0003.png" />
+                </Setter.Value>
+            </Setter>
+            <Setter Property="IsEnabled" Value="False"/>
+        </Style>
+        <Style x:Key="b2"  TargetType="Button">
+            <Setter Property="IsEnabled" Value="True"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20空白0000.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20空白0001.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20空白0002.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="ba1"  TargetType="Button">
+            <Setter Property="IsEnabled" Value="False"/>
+            <Setter  Property="Background">
+                <Setter.Value>
+                    <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20加0003.png" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ba2"  TargetType="Button">
+            <Setter Property="IsEnabled" Value="True"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20加0000.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20加0001.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20加0002.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="bd1"  TargetType="Button">
+            <Setter Property="IsEnabled" Value="False"/>
+            <Setter  Property="Background">
+                <Setter.Value>
+                    <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20减0003.png" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="bd2"  TargetType="Button">
+            <Setter Property="IsEnabled" Value="True"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20减0000.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20减0001.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/按钮%20减0002.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <Canvas>
+        <TextBlock Name="TMoods" Canvas.Left="205" Canvas.Top="55" Height="16"  Text="1" Width="37" FontWeight="Normal" TextAlignment="Center" FontSize="14"  />
+        <TextBlock Name="TName"  Canvas.Left="133" Canvas.Top="32"  FontSize="14" FontWeight="Normal" Height="16" Text="1" TextAlignment="Center" Width="109" />
+        <TextBlock Canvas.Left="50" Canvas.Top="55" FontSize="14" FontWeight="Normal" Height="16" Name="TTitle" Text="1" TextAlignment="Center" Width="109" />
+        <TextBlock Canvas.Left="205" Canvas.Top="78" FontSize="14" FontWeight="Normal" Height="16" Name="TFactionDevote" Text="1" TextAlignment="Center" Width="37" />
+        <TextBlock Canvas.Left="205" Canvas.Top="101" FontSize="14" FontWeight="Normal" Height="16" Name="TSchoolDevote" Text="1" TextAlignment="Center" Width="37" />
+        <TextBlock Canvas.Left="47" Canvas.Top="255" FontSize="14" FontWeight="Normal" Height="16" Name="THit" Text="1" TextAlignment="Center" Width="46" />
+        <TextBlock Canvas.Left="49" Canvas.Top="324" FontSize="14" FontWeight="Normal" Height="16" Name="TSpeed" Text="1" TextAlignment="Center" Width="43" />
+        <TextBlock Canvas.Left="145" Canvas.Top="254" FontSize="14" FontWeight="Normal" Height="16" Name="TTZ" Text="1" TextAlignment="Center" Width="50" />
+        <TextBlock Canvas.Left="49" Canvas.Top="346" FontSize="14" FontWeight="Normal" Height="16" Name="TAvoid" Text="1" TextAlignment="Center" Width="43" />
+        <TextBlock Canvas.Left="144" Canvas.Top="277" FontSize="14" FontWeight="Normal" Height="16" Name="TML" Text="1" TextAlignment="Center" Width="50" />
+        <TextBlock Canvas.Left="48" Canvas.Top="301" FontSize="14" FontWeight="Normal" Height="16" Name="TDetense" Text="1" TextAlignment="Center" Width="44" />
+        <TextBlock Canvas.Left="48" Canvas.Top="278" FontSize="14" FontWeight="Normal" Height="16" Name="THurt" Text="1" TextAlignment="Center" Width="45" />
+        <TextBlock Canvas.Left="144" Canvas.Top="324" FontSize="14" FontWeight="Normal" Height="16" Name="TNL" Text="1" TextAlignment="Center" Width="50" />
+        <TextBlock Canvas.Left="144" Canvas.Top="346" FontSize="14" FontWeight="Normal" Height="16" Name="TMJ" Text="1" TextAlignment="Center" Width="50" />
+        <TextBlock Canvas.Left="45" Canvas.Top="369" FontSize="14" FontWeight="Normal" Height="16" Name="TWakan" Text="1" TextAlignment="Center" Width="50" />
+        <TextBlock Canvas.Left="144" Canvas.Top="301" FontSize="14" FontWeight="Normal" Height="16" Name="TLL" Text="1" TextAlignment="Center" Width="50" />
+        <TextBlock Canvas.Left="133" Canvas.Top="369" FontSize="14" FontWeight="Normal" Height="16" Name="TQL" Text="1" TextAlignment="Center" Width="38" />
+        <TextBlock Canvas.Left="50" Canvas.Top="78" FontSize="14" FontWeight="Normal" Height="16" Name="TFaction" Text="1" TextAlignment="Center" Width="109" />
+        <TextBlock Canvas.Left="50" Canvas.Top="101" FontSize="14" FontWeight="Normal" Height="16" Name="TSchool" Text="1" TextAlignment="Center" Width="109" />
+        <TextBlock Canvas.Left="48" Canvas.Top="32" FontSize="14" FontWeight="Normal" Height="16" Name="TLevel" Text="1" TextAlignment="Center" Width="37" />
+        <TextBlock Canvas.Left="78" Canvas.Top="424" FontSize="14" FontWeight="Normal" Height="16" Name="TNowExp" Text="1" TextAlignment="Center" Width="97" />
+        <TextBlock Canvas.Left="78" Canvas.Top="400" FontSize="14" FontWeight="Normal" Height="16" Name="TLevelUpExp" Text="1" TextAlignment="Center" Width="94" />
+        <TextBlock Canvas.Left="50" Canvas.Top="132" FontSize="14" FontWeight="Normal" Height="16" Name="TLife" Text="1" TextAlignment="Center" Width="192" />
+        <TextBlock Canvas.Left="50" Canvas.Top="155" FontSize="14" FontWeight="Normal" Height="16" Name="TMagic" Text="1" TextAlignment="Center" Width="192" />
+        <TextBlock Canvas.Left="50" Canvas.Top="177" FontSize="14" FontWeight="Normal" Height="16" Name="TEnergy" Text="1" TextAlignment="Center" Width="192" />
+        <TextBlock Canvas.Left="50" Canvas.Top="201" FontSize="14" FontWeight="Normal" Height="16" Name="TVigour" Text="1" TextAlignment="Center" Width="192" />
+        <TextBlock Canvas.Left="50" Canvas.Top="224" FontSize="14" FontWeight="Normal" Height="16" Name="TBeef" Text="1" TextAlignment="Center" Width="192" />
+        <StackPanel Canvas.Left="199" Canvas.Top="247" Height="118" Name="Add" Width="24">
+            <Button Click="AT_Click" Height="20" Margin="2" Name="AT" Style="{StaticResource ba1}" Template="{StaticResource MyButton}" Width="20" />
+            <Button Click="AM_Click" Height="20" Margin="2" Name="AM" Style="{StaticResource ba1}" Template="{StaticResource MyButton}" Width="20" />
+            <Button Click="AL_Click" Height="20" Margin="2" Name="AL" Style="{StaticResource ba1}" Template="{StaticResource MyButton}" Width="20" />
+            <Button Click="AN_Click" Height="20" Margin="2" Name="AN" Style="{StaticResource ba1}" Template="{StaticResource MyButton}" Width="20" />
+            <Button Click="AJ_Click" Height="20" Margin="2" Name="AJ" Style="{StaticResource ba1}" Template="{StaticResource MyButton}" Width="20" />
+        </StackPanel>
+        <StackPanel Canvas.Left="224" Canvas.Top="247" Height="118" Name="Dec" Width="24">
+            <Button Click="DT_Click" Height="20" Margin="2" Name="DT" Style="{StaticResource bd1}" Template="{StaticResource MyButton}" Width="20" />
+            <Button Click="DM_Click" Height="20" Margin="2" Name="DM" Style="{StaticResource bd1}" Template="{StaticResource MyButton}" Width="20" />
+            <Button Click="DL_Click" Height="20" Margin="2" Name="DL" Style="{StaticResource bd1}" Template="{StaticResource MyButton}" Width="20" />
+            <Button Click="DN_Click" Height="20" Margin="2" Name="DN" Style="{StaticResource bd1}" Template="{StaticResource MyButton}" Width="20" />
+            <Button Click="DJ_Click" Height="20" Margin="2" Name="DJ" Style="{StaticResource bd1}" Template="{StaticResource MyButton}" Width="20" />
+        </StackPanel>
+        <Button Canvas.Left="201" Canvas.Top="367" Foreground="#FFC2B8B8" Height="23" Name="ButtnOK" Style="{StaticResource b1}" Width="45" Click="ButtnOK_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <StackPanel Background="{TemplateBinding Control.Background}">
+                        <TextBlock FontWeight="Bold" Margin="4" Text="确定" TextAlignment="Center" />
+                    </StackPanel>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Canvas>
+</UserControl>

@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="梦之西游.Controls.MessageShow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="482">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="173*" />
+            <ColumnDefinition Width="309*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*" />
+            <RowDefinition Height="167*" />
+        </Grid.RowDefinitions>
+        <Canvas Grid.Row="1" Grid.ColumnSpan="2">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/message.png" Stretch="Fill" TileMode="None" />
+            </Canvas.Background>
+            <RichTextBox Canvas.Left="6" Canvas.Top="26" Height="163" Name="MessageContent" Width="470" Background="{x:Null}" FontWeight="Bold" FontStyle="Italic" Foreground="#FFD7C6C6" FontSize="16"></RichTextBox>
+        </Canvas>
+        <Image  Name="MessageSay" Stretch="Fill" Grid.Column="0" Grid.Row="0" />
+    </Grid>
+</UserControl>

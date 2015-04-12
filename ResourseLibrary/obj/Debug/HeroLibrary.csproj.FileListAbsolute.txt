@@ -1,0 +1,6 @@
+D:\SourceCode\C#\梦之西游\ResourseLibrary\bin\Debug\ResourseLibrary.dll
+D:\SourceCode\C#\梦之西游\ResourseLibrary\bin\Debug\ResourseLibrary.pdb
+D:\SourceCode\C#\梦之西游\ResourseLibrary\obj\Debug\ResourseLibrary.MyResource.resources
+D:\SourceCode\C#\梦之西游\ResourseLibrary\obj\Debug\HeroLibrary.csproj.GenerateResource.Cache
+D:\SourceCode\C#\梦之西游\ResourseLibrary\obj\Debug\ResourseLibrary.dll
+D:\SourceCode\C#\梦之西游\ResourseLibrary\obj\Debug\ResourseLibrary.pdb

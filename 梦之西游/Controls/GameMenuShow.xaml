@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="梦之西游.Controls.GameMenuShow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              Width="800" Height="70">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*" />
+            <ColumnDefinition Width="38*" />
+            <ColumnDefinition Width="325*" />
+            <ColumnDefinition Width="26*" />
+            <ColumnDefinition Width="34*" />
+            <ColumnDefinition Width="34*" />
+            <ColumnDefinition Width="34*" />
+            <ColumnDefinition Width="30*" />
+            <ColumnDefinition Width="32*" />
+            <ColumnDefinition Width="34*" />
+            <ColumnDefinition Width="32*" />
+            <ColumnDefinition Width="32*" />
+            <ColumnDefinition Width="32*" />
+            <ColumnDefinition Width="34*" />
+            <ColumnDefinition Width="30*" />
+            <ColumnDefinition Width="36*" />
+            <ColumnDefinition Width="8*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35*" />
+            <RowDefinition Height="19*" />
+            <RowDefinition Height="24*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/menu.png" TileMode="None" />
+        </Grid.Background>
+        <Image  Name="BQ"  Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" MouseEnter="BQ_MouseEnter" MouseDown="BQ_MouseDown" MouseLeave="BQ_MouseLeave"  />
+        <Image  Name="GJ"  Grid.Column="4" Grid.Row="1" Grid.RowSpan="2"  MouseDown="GJ_MouseDown" MouseEnter="GJ_MouseEnter" MouseLeave="GJ_MouseLeave" />
+        <Image  Name="BG"  Grid.Column="5" Grid.Row="1" Grid.RowSpan="2"  MouseDown="BG_MouseDown" MouseEnter="BG_MouseEnter" MouseLeave="BG_MouseLeave"/>
+        <Image  Name="GY"  Grid.Column="6" Grid.Row="1" Grid.RowSpan="2"  MouseDown="GY_MouseDown" MouseEnter="GY_MouseEnter" MouseLeave="GY_MouseLeave"/>
+        <Image  Name="JY"  Grid.Column="7" Grid.Row="1" Grid.RowSpan="2"  MouseDown="JY_MouseDown" MouseEnter="JY_MouseEnter" MouseLeave="JY_MouseLeave"/>
+        <Image  Name="ZD"  Grid.Column="8" Grid.Row="1" Grid.RowSpan="2" MouseDown="ZD_MouseDown" MouseEnter="ZD_MouseEnter" MouseLeave="ZD_MouseLeave" />
+        <Image  Name="CW"  Grid.Column="9" Grid.Row="1" Grid.RowSpan="2"  MouseDown="CW_MouseDown" MouseEnter="CW_MouseEnter" MouseLeave="CW_MouseLeave"/>
+        <Image  Name="RW"  Grid.Column="10" Grid.Row="1" Grid.RowSpan="2" MouseDown="RW_MouseDown" MouseEnter="RW_MouseEnter" MouseLeave="RW_MouseLeave"/>
+        <Image  Name="BP"  Grid.Column="11" Grid.Row="1" Grid.RowSpan="2" MouseDown="BP_MouseDown" MouseEnter="BP_MouseEnter" MouseLeave="BP_MouseLeave" />
+        <Image  Name="FS"  Grid.Column="12" Grid.Row="1" Grid.RowSpan="2" MouseDown="FS_MouseDown" MouseEnter="FS_MouseEnter" MouseLeave="FS_MouseLeave"/>
+        <Image  Name="HY"  Grid.Column="13" Grid.Row="1" Grid.RowSpan="2" MouseDown="HY_MouseDown" MouseEnter="HY_MouseEnter" MouseLeave="HY_MouseLeave" />
+        <Image  Name="DZ"  Grid.Column="14" Grid.Row="1" Grid.RowSpan="2"  MouseDown="DZ_MouseDown" MouseEnter="DZ_MouseEnter" MouseLeave="DZ_MouseLeave"/>
+        <Image  Name="XT"  Grid.Column="15" Grid.Row="1" Grid.RowSpan="2"  MouseDown="XT_MouseDown" MouseEnter="XT_MouseEnter" MouseLeave="XT_MouseLeave"/>
+    </Grid>
+</UserControl>

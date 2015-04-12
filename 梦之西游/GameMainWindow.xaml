@@ -1,0 +1,7 @@
+﻿<NavigationWindow x:Class="梦之西游.GameMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="梦之西游" ResizeMode="CanMinimize" Closed="NavigationWindow_Closed" WindowStartupLocation="CenterScreen"  ShowsNavigationUI="False" WindowStyle="SingleBorderWindow"
+                  Width="805" Height="625" Navigating="NavigationWindow_Navigating">
+   
+</NavigationWindow>

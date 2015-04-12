@@ -1,0 +1,155 @@
+﻿<UserControl x:Class="梦之西游.Controls.BattleButtonsShow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Height="169" Width="50" MouseLeftButtonDown="UserControl_MouseLeftButtonDown" MouseRightButtonDown="UserControl_MouseRightButtonDown" MouseMove="UserControl_MouseMove" Background="#FF293C41">
+    <UserControl.Resources>
+        <ControlTemplate x:Key="MyButton" TargetType="Button">
+            <StackPanel Background="{TemplateBinding Button.Background}">
+            </StackPanel>
+        </ControlTemplate>
+        <Style x:Key="b1"  TargetType="Button">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/攻击.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/攻击2.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="b2"  TargetType="Button">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/法术.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/法术2.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="b3"  TargetType="Button">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/防御.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/防御2.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="b4"  TargetType="Button">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/道具.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/道具2.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="b5"  TargetType="Button">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/捕捉.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/捕捉2.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="b6"  TargetType="Button">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/召唤.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/召唤2.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="b7"  TargetType="Button">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/逃跑.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/逃跑2.png" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </UserControl.Resources>
+    <StackPanel Width="50">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="/梦之西游;component/Graphics/Windowskins/battle_button0.png" />
+            </StackPanel.Background>
+            <Button Click="GJ_Click" Width="50" Height="22" Margin="1" Name="DT" Style="{StaticResource b1}" Template="{StaticResource MyButton}"/>
+            <Button Click="FS_Click" Height="22" Margin="1" Name="FS" Style="{StaticResource b2}" Template="{StaticResource MyButton}"  />
+            <Button Click="FY_Click" Height="22" Margin="1" Name="FY" Style="{StaticResource b3}" Template="{StaticResource MyButton}"  />
+            <Button Click="DJ_Click" Height="22" Margin="1" Name="DJ" Style="{StaticResource b4}" Template="{StaticResource MyButton}"  />
+            <Button Click="BZ_Click" Height="22" Margin="1" Name="BZ" Style="{StaticResource b5}" Template="{StaticResource MyButton}"  />
+            <Button Click="ZH_Click" Height="22" Margin="1" Name="ZH" Style="{StaticResource b6}" Template="{StaticResource MyButton}"  />
+            <Button Click="TP_Click" Height="22" Margin="1" Name="TP" Style="{StaticResource b7}" Template="{StaticResource MyButton}"  />
+        </StackPanel>
+    </StackPanel>
+</UserControl>

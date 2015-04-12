@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <Maps>
+    <Map Sign="0" >
+      <Surface FileName="1506.map" MapName="东海湾" BKMusic="抒情1.mp3"></Surface>
+      <Spirits>
+        <NPC Name="42王母站立"  SName="王母娘娘"  WFrameNum="8" 
+		HFrameNum="4" StartX="0" StartY="0" EndX="928" EndY="536"  X="300" Y="300" 
+		Direction="0" Type="2"/>
+		 <NPC Name="80驿站老板"  SName="驿站老板"  WFrameNum="8" 
+		HFrameNum="4" StartX="0" StartY="0" EndX="400" EndY="375"  X="1200" Y="1980" 
+		Direction="0" Type="2"/>
+		 <NPC Name="大海龟站立"  SName="大海龟宝宝"  WFrameNum="8" 
+		HFrameNum="4" StartX="0" StartY="0" EndX="464" EndY="196"  X="1500" Y="2050" 
+		Direction="0" Type="1"/>
+		 <NPC Name="3兽医站立"  SName="兽医"  WFrameNum="8" 
+		HFrameNum="4" StartX="0" StartY="0" EndX="480" EndY="360"  X="1620" Y="1720" 
+		Direction="0" Type="2"/>
+		 <NPC Name="34楚连衣站立"  SName="楚连衣"  WFrameNum="8" 
+		HFrameNum="4" StartX="0" StartY="0" EndX="896" EndY="372"  X="1085" Y="720" 
+		Direction="1" Type="2"/>
+		<Monster Name="大海龟"/>
+      </Spirits>
+      <Teleports>
+        <Teleport Name="T1" Code="1" X="28" Y="750" ToX="4766" ToY="346" ToDirection="5"   Tip="建业城" />
+		<Teleport Name="T2" Code="1" X="68" Y="2302" ToX="5500" ToY="2330" ToDirection="5"   Tip="建业城" />
+		<Teleport Name="T3" Code="2" X="2246" Y="2300" ToX="130" ToY="150" ToDirection="5"   Tip="东海沉船" />
+      </Teleports>
+    </Map>
+    <Map Sign="1" >
+      <Surface FileName="1501.map" MapName="建业城" BKMusic="建邺.mp3"></Surface>
+      <Spirits>
+        <NPC Name="42王母站立"  SName="王母娘娘"  WFrameNum="8" 
+		HFrameNum="4" StartX="0" StartY="0" EndX="928" EndY="536"  X="300" Y="300" 
+		Direction="0" Type="2"/>
+		 <NPC Name="60衙役站立"  SName="建邺守卫"  WFrameNum="8" 
+		HFrameNum="4" StartX="0" StartY="0" EndX="640" EndY="500"  X="250" Y="2770" 
+		Direction="1" Type="2"/>
+      </Spirits>
+      <Teleports>
+        <Teleport Name="T1" Code="0" X="4866" Y="300" ToX="80" ToY="750" ToDirection="5"   Tip="东海湾" />
+		<Teleport Name="T2" Code="0" X="5541" Y="2393" ToX="120" ToY="2302" ToDirection="5"   Tip="东海湾" />
+      </Teleports>
+    </Map>
+    <Map Sign="2" >
+      <Surface FileName="1507.map" MapName="东海沉船" BKMusic="昔影.mp3"></Surface>
+      <Spirits>
+        <NPC Name="42王母站立"  SName="王母娘娘"  WFrameNum="8" 
+		HFrameNum="4" StartX="0" StartY="0" EndX="928" EndY="536"  X="300" Y="300" 
+		Direction="0" Type="2"/>
+      </Spirits>
+      <Teleports>
+        <Teleport Name="T1" Code="0" X="100" Y="100" ToX="2200" ToY="2250" ToDirection="5"   Tip="东海湾" />
+		<Teleport Name="T2" Code="3" X="1770" Y="300" ToX="430" ToY="150" ToDirection="5"   Tip="东海沉船二层" />
+      </Teleports>
+    </Map>
+	<Map Sign="3" >
+      <Surface FileName="1508.map" MapName="东海沉船二层" BKMusic="海底.mp3"></Surface>
+      <Spirits>
+        <NPC Name="42王母站立"  SName="王母娘娘"  WFrameNum="8" 
+		HFrameNum="4" StartX="0" StartY="0" EndX="928" EndY="536"  X="300" Y="300" 
+		Direction="0" Type="2"/>
+      </Spirits>
+      <Teleports>
+        <Teleport Name="T1" Code="2" X="400" Y="100" ToX="1700" ToY="250" ToDirection="5"   Tip="东海沉船" />
+		<Teleport Name="T2" Code="4" X="1529" Y="1424" ToX="200" ToY="250" ToDirection="5"   Tip="东海沉船底舱" />
+      </Teleports>
+	 </Map>
+	<Map Sign="4" >
+      <Surface FileName="1509.map" MapName="东海沉船底舱" BKMusic="034music.mp3"></Surface>
+      <Spirits>
+        <NPC Name="42王母站立"  SName="王母娘娘"  WFrameNum="8" 
+		HFrameNum="4" StartX="0" StartY="0" EndX="928" EndY="536"  X="300" Y="300" 
+		Direction="0" Type="2"/>
+      </Spirits>
+      <Teleports>
+        <Teleport Name="T1" Code="3" X="180" Y="250" ToX="1500" ToY="1350" ToDirection="5"   Tip="东海沉船二层" />
+      </Teleports>
+    </Map>
+  </Maps>
+  <Argument>
+    <Magics>
+      <Magic Code="0" Type="0" HasDirection="false" DecorationCode="-1" FrameNum="19" EffectiveFrame="4" SingleWidth="320" SingleHeight="344" Radius="140" CenterX="198" CenterY="287" ExtraAttribute="4">
+        <Level Value="1" ATK="120" ExtraEffect="10" ExtraTime="3" Consumption="10"/>
+        <Level Value="2" ATK="160" ExtraEffect="15" ExtraTime="3" Consumption="15"/>
+        <Level Value="3" ATK="200" ExtraEffect="20" ExtraTime="3" Consumption="20"/>
+        <Level Value="4" ATK="240" ExtraEffect="25" ExtraTime="3" Consumption="25"/>
+        <Level Value="5" ATK="280" ExtraEffect="30" ExtraTime="4" Consumption="30"/>
+        <Level Value="6" ATK="10" ExtraEffect="35" ExtraTime="25" Consumption="35"/>
+        <Level Value="7" ATK="380" ExtraEffect="40" ExtraTime="8" Consumption="40"/>
+        <Level Value="8" ATK="500" ExtraEffect="45" ExtraTime="9" Consumption="50"/>
+        <Level Value="9" ATK="700" ExtraEffect="60" ExtraTime="9" Consumption="60"/>
+      </Magic>
+      <Magic Code="1" Type="0" HasDirection="false" DecorationCode="-1" FrameNum="20" EffectiveFrame="4" SingleWidth="346" SingleHeight="356" Radius="160" CenterX="160" CenterY="290" ExtraAttribute="5">
+        <Level Value="1" ATK="80" ExtraEffect="10" ExtraTime="3" Consumption="3"/>
+        <Level Value="2" ATK="100" ExtraEffect="15" ExtraTime="3" Consumption="5"/>
+        <Level Value="3" ATK="120" ExtraEffect="20" ExtraTime="3" Consumption="7"/>
+        <Level Value="4" ATK="140" ExtraEffect="25" ExtraTime="4" Consumption="9"/>
+        <Level Value="5" ATK="160" ExtraEffect="30" ExtraTime="4" Consumption="11"/>
+        <Level Value="6" ATK="10" ExtraEffect="35" ExtraTime="25" Consumption="13"/>
+        <Level Value="7" ATK="200" ExtraEffect="40" ExtraTime="5" Consumption="15"/>
+        <Level Value="8" ATK="240" ExtraEffect="45" ExtraTime="6" Consumption="18"/>
+        <Level Value="9" ATK="300" ExtraEffect="60" ExtraTime="6" Consumption="25"/>
+      </Magic>
+      <Magic Code="2" Type="0" HasDirection="false" DecorationCode="-1" FrameNum="15" EffectiveFrame="3" SingleWidth="210" SingleHeight="300" Radius="120" CenterX="102" CenterY="217" ExtraAttribute="1">
+        <Level Value="1" ATK="110" ExtraEffect="10" ExtraTime="3" Consumption="5"/>
+        <Level Value="2" ATK="140" ExtraEffect="15" ExtraTime="3" Consumption="9"/>
+        <Level Value="3" ATK="170" ExtraEffect="20" ExtraTime="3" Consumption="13"/>
+        <Level Value="4" ATK="200" ExtraEffect="25" ExtraTime="3" Consumption="17"/>
+        <Level Value="5" ATK="230" ExtraEffect="30" ExtraTime="3" Consumption="21"/>
+        <Level Value="6" ATK="10" ExtraEffect="35" ExtraTime="25" Consumption="25"/>
+        <Level Value="7" ATK="290" ExtraEffect="40" ExtraTime="3" Consumption="30"/>
+        <Level Value="8" ATK="340" ExtraEffect="45" ExtraTime="4" Consumption="36"/>
+        <Level Value="9" ATK="400" ExtraEffect="60" ExtraTime="5" Consumption="42"/>
+      </Magic>
+      <Magic Code="3" Type="0" HasDirection="false" DecorationCode="-1" FrameNum="15" EffectiveFrame="3" SingleWidth="192" SingleHeight="192" Radius="100" CenterX="100" CenterY="157" ExtraAttribute="4">
+        <Level Value="1" ATK="50" ExtraEffect="10" ExtraTime="3" Consumption="2"/>
+        <Level Value="2" ATK="70" ExtraEffect="15" ExtraTime="3" Consumption="4"/>
+        <Level Value="3" ATK="90" ExtraEffect="20" ExtraTime="4" Consumption="6"/>
+        <Level Value="4" ATK="110" ExtraEffect="25" ExtraTime="4" Consumption="9"/>
+        <Level Value="5" ATK="140" ExtraEffect="30" ExtraTime="5" Consumption="11"/>
+        <Level Value="6" ATK="10" ExtraEffect="35" ExtraTime="25" Consumption="15"/>
+        <Level Value="7" ATK="200" ExtraEffect="40" ExtraTime="5" Consumption="19"/>
+        <Level Value="8" ATK="240" ExtraEffect="45" ExtraTime="6" Consumption="25"/>
+        <Level Value="9" ATK="290" ExtraEffect="50" ExtraTime="6" Consumption="32"/>
+      </Magic>
+      <Magic Code="4" Type="0" HasDirection="false" DecorationCode="4" FrameNum="14" EffectiveFrame="6" SingleWidth="315" SingleHeight="396" Radius="140" CenterX="160" CenterY="360" ExtraAttribute="2">
+        <Level Value="1" ATK="70" ExtraEffect="60" ExtraTime="3" Consumption="3"/>
+        <Level Value="2" ATK="100" ExtraEffect="90" ExtraTime="3" Consumption="6"/>
+        <Level Value="3" ATK="130" ExtraEffect="100" ExtraTime="4" Consumption="9"/>
+        <Level Value="4" ATK="160" ExtraEffect="110" ExtraTime="4" Consumption="12"/>
+        <Level Value="5" ATK="190" ExtraEffect="120" ExtraTime="4" Consumption="15"/>
+        <Level Value="6" ATK="10" ExtraEffect="35" ExtraTime="12" Consumption="18"/>
+        <Level Value="7" ATK="250" ExtraEffect="140" ExtraTime="5" Consumption="21"/>
+        <Level Value="8" ATK="290" ExtraEffect="150" ExtraTime="6" Consumption="25"/>
+        <Level Value="9" ATK="350" ExtraEffect="160" ExtraTime="6" Consumption="30"/>
+      </Magic>
+      <Magic Code="5" Type="0" HasDirection="false" DecorationCode="-1" FrameNum="12" EffectiveFrame="3" SingleWidth="358" SingleHeight="327" Radius="160" CenterX="180" CenterY="275" ExtraAttribute="3">
+        <Level Value="1" ATK="70" ExtraEffect="80" ExtraTime="3" Consumption="3"/>
+        <Level Value="2" ATK="100" ExtraEffect="100" ExtraTime="3" Consumption="6"/>
+        <Level Value="3" ATK="130" ExtraEffect="120" ExtraTime="4" Consumption="9"/>
+        <Level Value="4" ATK="160" ExtraEffect="140" ExtraTime="4" Consumption="12"/>
+        <Level Value="5" ATK="190" ExtraEffect="160" ExtraTime="5" Consumption="15"/>
+        <Level Value="6" ATK="230" ExtraEffect="180" ExtraTime="25" Consumption="18"/>
+        <Level Value="7" ATK="250" ExtraEffect="200" ExtraTime="6" Consumption="21"/>
+        <Level Value="8" ATK="290" ExtraEffect="220" ExtraTime="6" Consumption="25"/>
+        <Level Value="9" ATK="350" ExtraEffect="250" ExtraTime="7" Consumption="30"/>
+      </Magic>
+      <Magic Code="6" Type="1" FrameNum="20" EffectiveFrame="0" ExtraAttribute="0">
+        <Level Value="1" ATK="100" ExtraEffect="10" ExtraTime="3" Consumption="3"/>
+        <Level Value="2" ATK="150" ExtraEffect="20" ExtraTime="3" Consumption="6"/>
+        <Level Value="3" ATK="200" ExtraEffect="30" ExtraTime="3" Consumption="9"/>
+        <Level Value="4" ATK="250" ExtraEffect="40" ExtraTime="3" Consumption="12"/>
+        <Level Value="5" ATK="300" ExtraEffect="50" ExtraTime="4" Consumption="15"/>
+        <Level Value="6" ATK="10" ExtraEffect="35" ExtraTime="25" Consumption="18"/>
+        <Level Value="7" ATK="500" ExtraEffect="70" ExtraTime="5" Consumption="21"/>
+        <Level Value="8" ATK="700" ExtraEffect="80" ExtraTime="5" Consumption="25"/>
+        <Level Value="9" ATK="1000" ExtraEffect="90" ExtraTime="6" Consumption="30"/>
+      </Magic>
+      <Decoration Code="4" Num="3" Duration="2" CenterX="40" CenterY="60"></Decoration>
+    </Magics>
+    <ExtraItems>
+      <Item Value="0" Src="Interface/Icon/Extra0.png" Name="麻痹" Description="效果:无法动弹" />
+      <Item Value="1" Src="Interface/Icon/Extra1.png" Name="混乱" Description="效果:乱跑" />
+      <Item Value="2" Src="Interface/Icon/Extra2.png" Name="冰冻" Description="效果:速度减缓" />
+      <Item Value="3" Src="Interface/Icon/Extra3.png" Name="中毒" Description="效果:持续伤血" />
+      <Item Value="4" Src="Interface/Icon/Extra4.png" Name="燃烧" Description="效果:所有防御属性值降低" />
+      <Item Value="5" Src="Interface/Icon/Extra5.png" Name="虚弱" Description="效果:所有攻击属性值降低" />
+    </ExtraItems>
+    <LevelUp>
+      <Experience Level="0" Value="0" />
+      <Experience Level="1" Value="0" />
+      <Experience Level="2" Value="400" />
+      <Experience Level="3" Value="1280" />
+      <Experience Level="4" Value="2720" />
+      <Experience Level="5" Value="4800" />
+      <Experience Level="6" Value="7600" />
+      <Experience Level="7" Value="11200" />
+      <Experience Level="8" Value="15680" />
+      <Experience Level="9" Value="21120" />
+      <Experience Level="10" Value="27600" />
+      <Experience Level="11" Value="35200" />
+      <Experience Level="12" Value="44000" />
+      <Experience Level="13" Value="54080" />
+      <Experience Level="14" Value="65520" />
+      <Experience Level="15" Value="78400" />
+      <Experience Level="16" Value="92800" />
+      <Experience Level="17" Value="108800" />
+      <Experience Level="18" Value="126480" />
+      <Experience Level="19" Value="145920" />
+      <Experience Level="20" Value="167200" />
+      <Experience Level="21" Value="190400" />
+      <Experience Level="22" Value="215600" />
+      <Experience Level="23" Value="242880" />
+      <Experience Level="24" Value="272320" />
+      <Experience Level="25" Value="304000" />
+    </LevelUp>
+  </Argument>
+</Config>

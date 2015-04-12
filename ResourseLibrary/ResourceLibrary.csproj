@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA0F00AA-D56A-4A45-BAF3-32A021841ADE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResourseLibrary</RootNamespace>
+    <AssemblyName>ResourseLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MapInfo.cs" />
+    <Compile Include="MyResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceManage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\狐媚人攻击.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 被打 刀.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 被打 剑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 打招呼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 发火.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 返回 刀.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 返回 剑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 防御 刀.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 防御 剑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 攻击 刀.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 攻击 剑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 行礼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 哭泣.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 施法 刀.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 施法 剑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 死亡 刀.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 死亡 剑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 跳舞.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 向前冲 剑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 向前冲.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 战斗 刀.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 战斗 剑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 站立.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 走动.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠客 坐下.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\人物阴影.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000刀 剑侠客 被打.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000刀 剑侠客 返回.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000刀 剑侠客 防御.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000刀 剑侠客 攻击.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000刀 剑侠客 施法.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000刀 剑侠客 死亡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000刀 剑侠客 向前冲.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000刀 剑侠客 战斗.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000刀 剑侠客 站立.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030刀 剑侠客 被打.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030刀 剑侠客 返回.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030刀 剑侠客 防御.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030刀 剑侠客 攻击.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030刀 剑侠客 施法.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030刀 剑侠客 死亡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030刀 剑侠客 向前冲1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030刀 剑侠客 向前冲2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030刀 剑侠客 战斗.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030刀 剑侠客 站立.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030刀 剑侠客 走动.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\060刀 剑侠客 被打.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\060刀 剑侠客 返回.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\060刀 剑侠客 防御.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\060刀 剑侠客 攻击.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\060刀 剑侠客 施法.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\060刀 剑侠客 死亡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\060刀 剑侠客 战斗.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\060刀 剑侠客 站立.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\060刀 剑侠客 走动.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090冷月 剑侠客 被打.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090冷月 剑侠客 返回.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090冷月 剑侠客 防御.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090冷月 剑侠客 攻击.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090冷月 剑侠客 施法.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090冷月 剑侠客 死亡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090冷月 剑侠客 向前冲.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090冷月 剑侠客 战斗.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090冷月 剑侠客 站立.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090冷月 剑侠客 走动.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090屠龙 剑侠客 被打.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090屠龙 剑侠客 返回.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090屠龙 剑侠客 防御.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090屠龙 剑侠客 攻击.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090屠龙 剑侠客 施法.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090屠龙 剑侠客 死亡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090屠龙 剑侠客 向前冲.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090屠龙 剑侠客 战斗.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090屠龙 剑侠客 站立.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090屠龙 剑侠客 走动.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090血刃 剑侠客 被打.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090血刃 剑侠客 返回.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090血刃 剑侠客 防御.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090血刃 剑侠客 攻击.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090血刃 剑侠客 施法.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090血刃 剑侠客 死亡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090血刃 剑侠客 向前冲.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090血刃 剑侠客 战斗.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090血刃 剑侠客 站立.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090血刃 剑侠客 走动.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000刀 剑侠客 走动.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剑侠_W1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

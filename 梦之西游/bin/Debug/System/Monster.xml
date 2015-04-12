@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <Monsters>
+    <Monster SortName="大海龟" >
+		<ActionInfos>
+			<ActionInfo Action="17" Name="大海龟被打"    WFrameNum="2" 
+			HFrameNum="4" StartX="0" StartY="0" EndX="116" EndY="256"  />
+			<ActionInfo Action="23" Name="大海龟返回"   WFrameNum="6" 
+			HFrameNum="4" StartX="0" StartY="0" EndX="384" EndY="288"  />
+			<ActionInfo Action="19" Name="大海龟防御"   WFrameNum="1" 
+			HFrameNum="4" StartX="0" StartY="0" EndX="50" EndY="156"  />
+			<ActionInfo Action="9" Name="大海龟攻击"    WFrameNum="13" 
+			HFrameNum="4" StartX="0" StartY="0" EndX="2158" EndY="532"  />
+			<ActionInfo Action="11" Name="大海龟施法"    WFrameNum="15" 
+			HFrameNum="4" StartX="0" StartY="0" EndX="1110" EndY="644"  />
+			<ActionInfo Action="13" Name="大海龟死亡"    WFrameNum="10" 
+			HFrameNum="4" StartX="0" StartY="0" EndX="1420" EndY="444"  />
+			<ActionInfo Action="21" Name="大海龟向前冲"    WFrameNum="5" 
+			HFrameNum="4" StartX="0" StartY="0" EndX="325" EndY="216"  />
+			<ActionInfo Action="1" Name="大海龟站立"    WFrameNum="8" 
+			HFrameNum="4" StartX="0" StartY="0" EndX="464" EndY="196"  />
+			<ActionInfo Action="2" Name="大海龟走动"    WFrameNum="8" 
+			HFrameNum="4" StartX="0" StartY="0" EndX="480" EndY="192"  />
+		</ActionInfos>
+		<Property TakeLevel="0" Type="1" SName="大海龟" FaceImage="大海龟"/>
+    </Monster>
+  </Monsters>
+</Config>
